@@ -1,6 +1,7 @@
 # App Guriri 🏖️
 
 Um webapp turístico responsivo para a Praia de Guriri com mapas integrados, informações locais e serviços úteis.
+https://app-guriri-ocq2n4i9k-paolas-projects-2e3c5e3b.vercel.app
 
 ## 📱 Sobre o Projeto
 
