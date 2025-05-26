@@ -1,0 +1,60 @@
+**PRD - App Guriri**
+
+**Visão Geral**
+
+**App Guriri** é um webapp responsivo, otimizado para Android, que oferece informações turísticas e serviços úteis sobre a Praia de Guriri, localizada em São Mateus - ES. O aplicativo tem como público-alvo principal os turistas que visitam a região, mas também pode ser utilizado por moradores locais.
+
+**Objetivo**
+
+Oferecer uma plataforma prática e acessível com informações essenciais sobre a Ilha de Guriri, promovendo o turismo consciente, seguro e informativo.
+
+**Funcionalidades Principais**
+
+1. **Página Inicial**
+
+   * Apresentação do App Guriri.
+   * Mapa integrado do Google Maps com pontos de interesse marcados (praia, comércios, pontos turísticos).
+   * Frase de boas-vindas e breve descrição da ilha.
+
+2. **História e Informações**
+
+   * Texto sobre a história da Praia de Guriri.
+   * Curiosidades e dados geográficos e culturais relevantes.
+
+3. **Projeto Tamar**
+
+   * Informações sobre o projeto local de preservação das tartarugas marinhas.
+   * Horários de visitação e localização.
+
+4. **Contatos de Emergência e Denúncia**
+
+   * Telefones úteis: polícia, bombeiros, SAMU.
+   * Formulário para denúncia anônima (segurança ou ambiental).
+
+5. **Roteiro de Viagem**
+
+   * Sugestões de passeios e atividades (praia, artesanato, culinária, eventos).
+   * Itinerário de 1, 3 e 5 dias.
+
+6. **Hotéis e Restaurantes**
+
+   * Lista de estabelecimentos com nome, tipo, faixa de preço.
+   * Integração com o Google Maps para localização e rotas.
+
+**Público-alvo**
+
+* Turistas nacionais e internacionais.
+* Moradores de São Mateus e região que desejam explorar mais a área.
+
+**Tecnologias**
+
+* HTML, CSS, JavaScript (com possível uso de frameworks como Bootstrap ou React).
+* API do Google Maps.
+* Design responsivo focado em dispositivos Android.
+
+**Benefícios Esperados**
+
+* Maior integração do turista com a região.
+* Estímulo ao comércio e serviços locais.
+* Canal direto para denúncias ambientais e emergenciais.
+* Educação ambiental e valorização cultural.

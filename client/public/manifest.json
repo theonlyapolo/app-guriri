@@ -1,0 +1,27 @@
+{
+  "name": "App Guriri - Guia Turístico",
+  "short_name": "App Guriri",
+  "description": "Guia turístico completo da Praia de Guriri com mapas interativos, roteiros e informações locais",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D47A1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["travel", "tourism", "maps"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

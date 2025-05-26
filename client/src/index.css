@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Custom colors for Guriri Beach theme */
+  --ocean: 207 90% 54%; /* #0D47A1 - Deep ocean blue */
+  --sand: 45 100% 51%; /* #FFB300 - Golden sand */
+  --nature: 122 39% 33%; /* #2E7D32 - Natural green */
+  --surface: 0 0% 96%; /* #F5F5F5 - Light surface */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-surface text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-ocean {
+    color: hsl(var(--ocean));
+  }
+  
+  .bg-ocean {
+    background-color: hsl(var(--ocean));
+  }
+  
+  .text-sand {
+    color: hsl(var(--sand));
+  }
+  
+  .bg-sand {
+    background-color: hsl(var(--sand));
+  }
+  
+  .text-nature {
+    color: hsl(var(--nature));
+  }
+  
+  .bg-nature {
+    background-color: hsl(var(--nature));
+  }
+  
+  .bg-surface {
+    background-color: hsl(var(--surface));
+  }
+  
+  .smooth-transition {
+    transition: all 0.3s ease;
+  }
+  
+  .floating-btn {
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .floating-btn:hover {
+    box-shadow: 0 6px 16px rgba(13, 71, 161, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple:active::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    top: 50%; 
+    left: 50%;
+    width: 100px; 
+    height: 100px;
+    margin-left: -50px; 
+    margin-top: -50px;
+  }
+  
+  @keyframes ripple { 
+    to { 
+      transform: scale(4); 
+      opacity: 0; 
+    } 
+  }
+}
